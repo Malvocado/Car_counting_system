@@ -28,6 +28,8 @@ else:
     print("Running on CPU")
 DEVICE = 0 if torch.cuda.is_available() else "cpu"
 
+#Load best.pt model
+
 import gradio as gr
 
 if not MODEL_PATH.exists():
@@ -52,6 +54,7 @@ car_class_names = {i: model.names[i] for i in car_class_ids}
 print(f"Car class IDs for counting: {car_class_ids}")
 print(f"Car class names: {car_class_names}")
 
+#Car Counting Function Logic
 
 def count_cars(video_path, model, car_ids, line_y_pos=0.5, device="cpu", output_dir=None):
     video_path = Path(video_path)
@@ -175,6 +178,7 @@ def process_video(video_file):
     except Exception as e:
         return None, f"Error processing video: {str(e)}"
 
+#Gradio Interface
 
 with gr.Blocks(title="Car Counting System") as demo:
     gr.Markdown("# Car Counting System")
@@ -211,6 +215,7 @@ with gr.Blocks(title="Car Counting System") as demo:
         "© MALVO"
     )
 
+# Launch Gradio
 
 if __name__ == "__main__":
     demo.launch()

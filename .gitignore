@@ -12,3 +12,4 @@ outputs/tracking/*
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+AGENTS.md

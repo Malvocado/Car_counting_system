@@ -1,0 +1,18 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+nc: 7
+names:
+- Bus
+- Motorcycle
+- Pickup
+- SUV
+- Sedan
+- Truck
+- Van
+roboflow:
+  workspace: cc-pintel
+  project: car-counting
+  version: 1
+  license: MIT
+  url: https://universe.roboflow.com/cc-pintel/car-counting/dataset/1

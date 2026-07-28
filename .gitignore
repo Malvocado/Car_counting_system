@@ -1,0 +1,14 @@
+.venv/
+notebooks/runs/
+notebooks/*.pt
+models/yolo11s.pt
+dataset/train/
+dataset/valid/
+dataset/test/
+outputs/counting/*
+outputs/detection/*
+outputs/tracking/*
+!outputs/**/.gitkeep
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

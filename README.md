@@ -78,13 +78,13 @@ jupyter notebook car_counting_gradio.ipynb
 ## Requirements
 
 ```
-ultralytics
-opencv-python
-torch
-matplotlib
-PyYAML
-gradio
-lap
+ultralytics==8.4.106
+opencv-python==5.0.0.93
+torch==2.11.0
+matplotlib==3.11.1
+PyYAML==6.0.3
+gradio==6.20.0
+lap==0.5.13
 ```
 
 See `requirements.txt` for the full list.

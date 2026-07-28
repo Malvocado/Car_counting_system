@@ -177,7 +177,7 @@ def process_video(video_file):
 
 
 with gr.Blocks(title="Car Counting System") as demo:
-    gr.Markdown("# \U0001f697 Car Counting System")
+    gr.Markdown("# Car Counting System")
     gr.Markdown(
         "Upload a traffic video to detect, track, and count cars "
         "using **YOLO11s** and **ByteTrack**."
@@ -206,7 +206,9 @@ with gr.Blocks(title="Car Counting System") as demo:
         "4. ByteTrack assigns tracking IDs\n"
         "5. A virtual line detects crossings\n"
         "6. Each car is counted once\n"
-        "7. Processed video and count are displayed"
+        "7. Processed video and count are displayed\n"
+        "\n"
+        "© MALVO"
     )
 
 

@@ -158,7 +158,7 @@ def count_cars(video_path, model, car_ids, line_y_pos=0.5, device="cpu", output_
 
     return str(output_path), total_count
 
-
+# Process video function
 def process_video(video_file):
     if video_file is None:
         return None, "No video uploaded."
